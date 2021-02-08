@@ -86,7 +86,8 @@
 
         <!-- ===================== BEGIN: SETTING NAVBAR MENU ====================================-->
         <li class="dropdown">
-          <a href="#" data-toggle="sidebar" data-target="#sidebar-with-tabs" id="right_sidebar">
+          <!-- <a href="#" data-toggle="sidebar" data-target="#rightbar" id="right_sidebar"> -->
+          <a href="#" data-toggle="sidebar" data-target="#sidebar-right" id="right_sidebar">
             <i class="px-navbar-icon fa fa-th font-size-14"></i>
             <span class="px-navbar-icon-label">Setting</span>
           </a>	                                      

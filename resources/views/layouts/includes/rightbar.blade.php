@@ -1,40 +1,31 @@
   <!-- RIGHT SIDEBAR --->
-  <div class="px-sidebar-right panel panel-dark panel-body-colorful" id="sidebar-with-tabs" data-width="350">
-    <div class="panel panel-dark panel-body-colorful ">
-      <div class="panel-heading ">
-        <span class="panel-title">Right Sidebar Panel</span>
-        <div class="panel-heading-icon">
-          <a href='#' data-toggle="sidebar" data-target="#sidebar-with-tabs"><i class="fa fa-remove panel-dark"></i></a>
-        </div>
+  <div class="px-sidebar-right panel panel-dark panel-body-colorful" id="rightbar" data-width="350">
+
+    <div class="px-sidebar-content">
+      <div class="p-a-4">
+        <h3 class="m-t-0">Sidebar content</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada
+          lacinia ultrices. Integer sapien risus, rutrum sit amet ligula eget, dictum
+          consequat turpis. Nam est augue, mattis in purus ac, molestie mollis eros.
+          Nulla elementum odio eget elit gravida, nec euismod orci egestas. Vivamus
+          nec faucibus leo. Cras fringilla pulvinar velit, eu vehicula nisi varius
+          eget. Cras dignissim libero a arcu mattis, a viverra turpis mollis. Sed
+          sagittis, nibh maximus convallis laoreet, diam leo finibus ipsum, vitae
+          viverra mi augue a felis. Proin et porta lorem. Proin eu mattis urna. Aliquam
+          vel bibendum elit, in dignissim purus. Nunc quam dui, pellentesque et eros id,
+          vestibulum malesuada eros.
+        </p>
+        <p>
+          Maecenas id faucibus lorem. Quisque dolor massa, dapibus a placerat at,
+          tristique quis velit. Pellentesque habitant morbi tristique senectus et
+          netus et malesuada fames ac turpis egestas. Nunc et mauris viverra, posuere
+          risus interdum, feugiat nulla. Donec aliquam eros libero, a pretium felis
+          posuere id. Etiam nec ligula ex. Nam vehicula quam tellus, ac viverra odio
+          sodales a.
+        </p>
+        <button type="button" class="btn" data-toggle="sidebar" data-target="#rightbar">Hide sidebar</button>
       </div>
     </div>
-    <div class="px-sidebar-content">
-      <div class="panel-body">
-            <form action="department" class="panel-body">
-              <div class="form-group">
-                <label for="page-messages-new-from">Code</label>
-                <input type="text" class="form-control" id="page-messages-new-from" value="DEPT0001" readonly>
-              </div>
-
-              <div class="form-group">
-                <label for="page-messages-new-to">Nama Department</label>
-                <!-- NOTE: Select2 v4 is not support input[type=text] fields -->
-                <input type="text" class="form-control" id="page-messages-new-from" value="<nama department disini>">
-              </div>
-
-              <div class="form-group">
-                <label for="page-messages-new-subject">Keterangan</label>
-                <textarea class="form-control" id="page-messages-new-text" rows="8"></textarea>
-              </div>
-
-              <hr class="panel-wide-block">
-
-              <div class="text-md-right">
-                <button type="submit" class="btn">Batal</button>&nbsp;&nbsp;&nbsp;
-                <button type="submit" class="btn btn-primary">Simpan</button>
-              </div>
-            </form>      
-      </div>
-    </div>         
   </div>
   <!-- RIGHT SIDEBAR --->  

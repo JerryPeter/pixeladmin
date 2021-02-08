@@ -9,13 +9,13 @@ $(document).ready(function() {
         }
     });
 
-    $('#sidebar-with-tabs').on('expanded.px.sidebar', function(e) {
+    $('#rightbar').on('expanded.px.sidebar', function(e) {
         $('.overlay').addClass('active');
         e.preventDefault();          
     });
 
 
-    $('#sidebar-with-tabs').on('collapsed.px.sidebar', function(e) {
+    $('#rightbar').on('collapsed.px.sidebar', function(e) {
         $('.overlay').removeClass('active');
         e.preventDefault();
     });        
@@ -23,7 +23,8 @@ $(document).ready(function() {
     /*--- Kalau gag boleh ditutup dicomment saja --*/
     overlay.on('click', function() {
         $(this).removeClass('active');
-        $('#sidebar-with-tabs').removeClass('open');
+        $('#sidebar-right').removeClass('open');
+        $('#rightbar').removeClass('open');
     });
 
 
