@@ -9,14 +9,15 @@ $(document).ready(function() {
         }
     });
 
-    $('#rightbar').on('expanded.px.sidebar', function(e) {
+    $('#sidebar-right').on('expanded.px.sidebar', function(e) {
         $('.overlay').addClass('active');
         e.preventDefault();          
     });
 
 
-    $('#rightbar').on('collapsed.px.sidebar', function(e) {
+    $('#sidebar-right').on('collapsed.px.sidebar', function(e) {
         $('.overlay').removeClass('active');
+        $('#sidebar-right').removeClass('open');
         e.preventDefault();
     });        
 
@@ -26,6 +27,4 @@ $(document).ready(function() {
         $('#sidebar-right').removeClass('open');
         $('#rightbar').removeClass('open');
     });
-
-
 });

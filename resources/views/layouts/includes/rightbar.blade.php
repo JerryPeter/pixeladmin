@@ -1,6 +1,6 @@
   <!-- RIGHT SIDEBAR --->
-  <div class="px-sidebar-right panel panel-dark panel-body-colorful" id="rightbar" data-width="350">
-
+  <!-- <div class="px-sidebar-right panel panel-dark panel-body-colorful" id="rightbar" data-width="350"> -->
+  <div class="px-sidebar-right" id="sidebar-right" data-width="350">
     <div class="px-sidebar-content">
       <div class="p-a-4">
         <h3 class="m-t-0">Sidebar content</h3>
@@ -24,7 +24,7 @@
           posuere id. Etiam nec ligula ex. Nam vehicula quam tellus, ac viverra odio
           sodales a.
         </p>
-        <button type="button" class="btn" data-toggle="sidebar" data-target="#rightbar">Hide sidebar</button>
+        <button type="button" class="btn" data-toggle="sidebar" data-target="#sidebar-right">Hide sidebar</button>
       </div>
     </div>
   </div>
