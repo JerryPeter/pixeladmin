@@ -84,6 +84,16 @@
         </li>
         <!-- ===================== END: PROFILE NAVBAR MENU ====================================-->
 
+        <!-- ===================== BEGIN: FULLSCREEN  ====================================-->
+        <li class="dropdown">
+          <!-- <a href="#" data-toggle="sidebar" data-target="#rightbar" id="right_sidebar"> -->
+          <a href="#" id="btnFullscreen">
+            <i class="px-navbar-icon ion-qr-scanner font-size-14"></i>
+            <span class="px-navbar-icon-label">Fullscreen</span>
+          </a>	                                      
+        </li>
+        <!-- ===================== END: FULLSCREEN ====================================-->          
+
         <!-- ===================== BEGIN: SETTING NAVBAR MENU ====================================-->
         <li class="dropdown">
           <!-- <a href="#" data-toggle="sidebar" data-target="#rightbar" id="right_sidebar"> -->

@@ -35,3 +35,5 @@ Route::get('attandance', [PersonalController::class, 'attandance']);
 // -- MASTER DATA --
 Route::get('department', [MasterController::class, 'department']);
 Route::get('department_add', [MasterController::class, 'department_add']);
+
+Route::get('divisi', [MasterController::class, 'divisi']);

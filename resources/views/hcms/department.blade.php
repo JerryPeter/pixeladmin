@@ -79,8 +79,8 @@
     <div class="page-header">
       <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-android-folder"></i>Master Data / </span>Department</h1>
     </div>
-    <div class="panel">
-        <div class="collapse navbar-collapse m-a-1" id="px-demo-navbar-collapse">
+    <div class="panel" id="objFullscreen">
+        <div class="collapse navbar-collapse m-a-0" id="px-demo-navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
                 <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
@@ -127,18 +127,27 @@
             <ul class="nav navbar-nav navbar-right">
 
             <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-navicon"></i>                
-                <span class="hidden-md">&nbsp;&nbsp;Aksi lain</span>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a href="pages-profile-v2.html"><span class="label label-warning pull-xs-right"><i class="fa fa-asterisk"></i></span>Profile</a></li>
-                <li><a href="pages-account.html">Account</a></li>
-                <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Messages</a></li>
-                <li class="divider"></li>
-                <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
-            </ul>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-navicon"></i>                
+                    <span class="hidden-md">&nbsp;&nbsp;Aksi lain</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="pages-profile-v2.html"><span class="label label-warning pull-xs-right"><i class="fa fa-asterisk"></i></span>Profile</a></li>
+                    <li><a href="pages-account.html">Account</a></li>
+                    <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Messages</a></li>
+                    <li class="divider"></li>
+                    <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+                </ul>
             </li>
+
+            <!-- ===================== BEGIN: FULLSCREEN  ====================================-->
+            <li class="dropdown">           
+            <a href="#" id="btnFullscreenObj">
+                <i class="px-navbar-icon ion-qr-scanner font-size-14"></i>
+                <span class="px-navbar-icon-label">Fullscreen</span>
+            </a>	                                      
+            </li>
+            <!-- ===================== END: FULLSCREEN ====================================-->               
 
         </ul>
         </div>    

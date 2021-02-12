@@ -16,4 +16,9 @@ class MasterController extends Controller
     {
         return view('hcms.department_form');
     }       
+
+    public function divisi()
+    {
+        return view('hcms.divisi');
+    }     
 }
