@@ -1,5 +1,5 @@
   <!-- ================= BEGIN: SIDEBAR ============================= -->  
-  <nav class="px-nav px-nav-left">
+  <nav class="px-nav px-nav-left px-nav-fixed">
     <button type="button" class="px-nav-toggle" data-toggle="px-nav">
       <span class="px-nav-toggle-arrow"></span>
       <span class="navbar-toggle-icon"></span>

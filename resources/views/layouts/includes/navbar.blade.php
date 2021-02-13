@@ -1,7 +1,7 @@
 <nav class="navbar px-navbar">
     <!-- Header -->
     <div class="navbar-header">
-      <a class="navbar-brand px-demo-brand" href="index.html">
+      <a class="navbar-brand px-demo-brand" href="dashboard">
           <img src="{{ url('assets/img/logo-color-50x50.png') }}" alt="" class="px-navbar-image">
         </span>KertasKerja</a>
     </div>

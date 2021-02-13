@@ -67,7 +67,16 @@
             }
         });        
 
-      //$('#datatables').dataTable();
+      $('body').perfectScrollbar();
+
+      if ( $.fn.dataTable.isDataTable( '#datatables' ) ) {
+            table = $('#datatables').DataTable();
+      }
+      else {
+            table = $('#datatables').DataTable( {
+                "lengthMenu": [ [10, 20, 50, -1], [10, 20, 50, "All"] ]
+            } );
+      }      
       $('#datatables_wrapper .table-caption').text('Master Jabatan');
       $('#datatables_wrapper .dataTables_filter input').attr('placeholder', 'Search...');
       
@@ -81,92 +90,95 @@
 <!-- ================= BEGIN: CONTENT ============================= -->
 
 <div class="px-content">
-    <div class="panel panel-body-colorful ">
-        <div class="collapse navbar-collapse" id="px-demo-navbar-collapse">
-            <ul class="nav navbar-nav">
+    <div>
+        <div class="panel panel-body-colorful">
+            <div class="collapse navbar-collapse" id="px-demo-navbar-collapse">
+                <ul class="nav navbar-nav">
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-server"></i>                
-                        <span class="hidden-md">&nbsp;&nbsp;Master Data</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="pages-profile-v2.html">Master Department</a></li>
-                        <li><a href="pages-account.html">Master Divisi</a></li>
-                        <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Master Jabatan</a></li>
-                    </ul>
-                </li>     
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-server"></i>                
+                            <span class="hidden-md">&nbsp;&nbsp;Master Data</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages-profile-v2.html">Master Department</a></li>
+                            <li><a href="pages-account.html">Master Divisi</a></li>
+                            <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Master Jabatan</a></li>
+                        </ul>
+                    </li>     
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-list-alt"></i>                
-                        <span class="hidden-md">&nbsp;&nbsp;Transaksi</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="pages-profile-v2.html">Pesonnel</a></li>
-                        <li><a href="pages-account.html">Payroll Prosess</a></li>
-                        <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Kirim Email</a></li>
-                        <li class="divider"></li>
-                        <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Payslip</a></li>
-                    </ul>
-                </li>      
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-list-alt"></i>                
+                            <span class="hidden-md">&nbsp;&nbsp;Transaksi</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages-profile-v2.html">Pesonnel</a></li>
+                            <li><a href="pages-account.html">Payroll Prosess</a></li>
+                            <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Kirim Email</a></li>
+                            <li class="divider"></li>
+                            <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Payslip</a></li>
+                        </ul>
+                    </li>      
 
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-file-text-o"></i>                
-                        <span class="hidden-md">&nbsp;&nbsp;Laporan</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="pages-profile-v2.html">Master Department</a></li>
-                        <li><a href="pages-account.html">Master Divisi</a></li>
-                        <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Master Jabatan</a></li>
-                        <li class="divider"></li>
-                        <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
-                    </ul>
-                </li>          
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-file-text-o"></i>                
+                            <span class="hidden-md">&nbsp;&nbsp;Laporan</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages-profile-v2.html">Master Department</a></li>
+                            <li><a href="pages-account.html">Master Divisi</a></li>
+                            <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Master Jabatan</a></li>
+                            <li class="divider"></li>
+                            <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+                        </ul>
+                    </li>          
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-wrench"></i>                
-                        <span class="hidden-md">&nbsp;&nbsp;Utility</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="pages-profile-v2.html">Master Department</a></li>
-                        <li><a href="pages-account.html">Master Divisi</a></li>
-                        <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Master Jabatan</a></li>
-                        <li class="divider"></li>
-                        <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
-                    </ul>
-                </li>                                            
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-wrench"></i>                
+                            <span class="hidden-md">&nbsp;&nbsp;Utility</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages-profile-v2.html">Master Department</a></li>
+                            <li><a href="pages-account.html">Master Divisi</a></li>
+                            <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Master Jabatan</a></li>
+                            <li class="divider"></li>
+                            <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+                        </ul>
+                    </li>                                            
 
-                                
-            </ul>
+                                    
+                </ul>
 
-            <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-navicon"></i>                
-                        <span class="hidden-md">&nbsp;&nbsp;Aksi lain</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="pages-profile-v2.html"><span class="label label-warning pull-xs-right"><i class="fa fa-asterisk"></i></span>Profile</a></li>
-                        <li><a href="pages-account.html">Account</a></li>
-                        <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Messages</a></li>
-                        <li class="divider"></li>
-                        <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
-                    </ul>
-                </li>              
-            </ul>
-        </div>    
-    </div>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-navicon"></i>                
+                            <span class="hidden-md">&nbsp;&nbsp;Aksi lain</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages-profile-v2.html"><span class="label label-warning pull-xs-right"><i class="fa fa-asterisk"></i></span>Profile</a></li>
+                            <li><a href="pages-account.html">Account</a></li>
+                            <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Messages</a></li>
+                            <li class="divider"></li>
+                            <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+                        </ul>
+                    </li>              
+                </ul>
+            </div>    
+        </div>
+    </div>       
+     
     <div class="p-t-0 p-l-3 p-r-3">
         <div class="page-header">
         <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-android-folder"></i>Master Data / </span>Jabatan</h1>
         </div>
 
-        <div class="panel panel-body-colorful" id="objFullscreen">
+        <div class="panel panel-body-colorful scroll" id="objFullscreen">
             <div class="collapse navbar-collapse " id="px-demo-navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
