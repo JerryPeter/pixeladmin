@@ -21,4 +21,9 @@ class MasterController extends Controller
     {
         return view('hcms.divisi');
     }     
+
+    public function jabatan()
+    {
+        return view('hcms.jabatan');
+    }      
 }

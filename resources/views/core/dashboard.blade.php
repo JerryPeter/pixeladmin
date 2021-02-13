@@ -249,129 +249,132 @@
 @section('content')
 <!-- ================= BEGIN: CONTENT ============================= -->
 <div class="px-content">
-    <div class="page-header">
-      <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-stats-bars"></i>Dashboard / </span>Analytics</h1>      
-    </div>
-
-    <div class="row">
-
-      <!-- Stats -->
-
-      <div class="col-md-3">
-        <a href="#" class="box bg-success darken">
-          <div class="box-row">
-            <div class="box-cell p-x-3 p-y-1 bg-success">
-              <div class="pull-xs-left font-weight-semibold font-size-12">TOTAL EMPLOYEE</div>
-            </div>
-          </div>
-          <div class="box-row">
-            <div class="box-cell p-x-3 p-y-2">
-              <i class="box-bg-icon middle left font-size-52 ion-ios-people-outline text-white"></i>
-              <div class="pull-xs-right font-weight-semibold font-size-24 line-height-1">583</div>
-            </div>
-          </div>
-        </a>
+    <div class="p-a-4">
+      
+      <div class="page-header">
+        <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-stats-bars"></i>Dashboard / </span>Analytics</h1>      
       </div>
 
-      <div class="col-md-3">
-        <a href="#" class="panel box bg-white text-default">
-          <div class="box-row">
-            <div class="box-cell p-x-3 p-y-1">
-              <div class="pull-xs-left font-weight-semibold font-size-12">PERMANENT</div>
+      <div class="row">
+
+        <!-- Stats -->
+
+        <div class="col-md-3">
+          <a href="#" class="box bg-success darken">
+            <div class="box-row">
+              <div class="box-cell p-x-3 p-y-1 bg-success">
+                <div class="pull-xs-left font-weight-semibold font-size-12">TOTAL EMPLOYEE</div>
+              </div>
             </div>
-          </div>
-          <div class="box-row">
-            <div class="box-cell p-x-3 p-y-2">
-              <i class="box-bg-icon middle left text-danger font-size-52 ion-ios-people-outline"></i>
-              <div class="pull-xs-right font-weight-semibold font-size-24 line-height-1">410</div>
+            <div class="box-row">
+              <div class="box-cell p-x-3 p-y-2">
+                <i class="box-bg-icon middle left font-size-52 ion-ios-people-outline text-white"></i>
+                <div class="pull-xs-right font-weight-semibold font-size-24 line-height-1">583</div>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a href="#" class="panel box bg-white text-default">
+            <div class="box-row">
+              <div class="box-cell p-x-3 p-y-1">
+                <div class="pull-xs-left font-weight-semibold font-size-12">PERMANENT</div>
+              </div>
+            </div>
+            <div class="box-row">
+              <div class="box-cell p-x-3 p-y-2">
+                <i class="box-bg-icon middle left text-danger font-size-52 ion-ios-people-outline"></i>
+                <div class="pull-xs-right font-weight-semibold font-size-24 line-height-1">410</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a href="#" class="panel box bg-white text-default">
+            <div class="box-row">
+              <div class="box-cell p-x-3 p-y-1">
+                <div class="pull-xs-left font-weight-semibold font-size-12">CONTRACT</div>
+              </div>
+            </div>
+            <div class="box-row">
+              <div class="box-cell p-x-3 p-y-2">
+                <i class="box-bg-icon middle left text-info font-size-52 ion-ios-people-outline"></i>
+                <div class="pull-xs-right font-weight-semibold font-size-24 line-height-1">153</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a href="#" class="panel box bg-white text-default">
+            <div class="box-row">
+              <div class="box-cell p-x-3 p-y-1">
+                <div class="pull-xs-left font-weight-semibold font-size-12">MAGANG</div>
+              </div>
+            </div>
+            <div class="box-row">
+              <div class="box-cell p-x-3 p-y-2">
+                <i class="box-bg-icon middle left text-warning font-size-52 ion-ios-people-outline"></i>
+                <div class="pull-xs-right font-weight-semibold font-size-24 line-height-1">20</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- / Stats -->
+
       </div>
 
-      <div class="col-md-3">
-        <a href="#" class="panel box bg-white text-default">
-          <div class="box-row">
-            <div class="box-cell p-x-3 p-y-1">
-              <div class="pull-xs-left font-weight-semibold font-size-12">CONTRACT</div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel">
+            <div class="panel-title">Employee Status</div>
+            <hr>
+
+            <div class="panel-body">
+              <div id="flot-graph" style="height: 250px"></div>
             </div>
           </div>
-          <div class="box-row">
-            <div class="box-cell p-x-3 p-y-2">
-              <i class="box-bg-icon middle left text-info font-size-52 ion-ios-people-outline"></i>
-              <div class="pull-xs-right font-weight-semibold font-size-24 line-height-1">153</div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="panel">
+            <div class="panel-title">Gender</div>
+            <hr>
+
+            <div class="panel-body">
+              <div id="flot-bars" style="height: 250px"></div>
             </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-3">
-        <a href="#" class="panel box bg-white text-default">
-          <div class="box-row">
-            <div class="box-cell p-x-3 p-y-1">
-              <div class="pull-xs-left font-weight-semibold font-size-12">MAGANG</div>
-            </div>
-          </div>
-          <div class="box-row">
-            <div class="box-cell p-x-3 p-y-2">
-              <i class="box-bg-icon middle left text-warning font-size-52 ion-ios-people-outline"></i>
-              <div class="pull-xs-right font-weight-semibold font-size-24 line-height-1">20</div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- / Stats -->
-
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="panel">
-          <div class="panel-title">Employee Status</div>
-          <hr>
-
-          <div class="panel-body">
-            <div id="flot-graph" style="height: 250px"></div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="panel">
-          <div class="panel-title">Gender</div>
-          <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel">
+            <div class="panel-title">Categories</div>
+            <hr>
 
-          <div class="panel-body">
-            <div id="flot-bars" style="height: 250px"></div>
+            <div class="panel-body">
+              <div id="flot-categories" style="height: 250px"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="panel">
+            <div class="panel-title">Employee per Department</div>
+            <hr>
+
+            <div class="panel-body">
+              <div id="flot-pie" style="height: 250px"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="panel">
-          <div class="panel-title">Categories</div>
-          <hr>
-
-          <div class="panel-body">
-            <div id="flot-categories" style="height: 250px"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="panel">
-          <div class="panel-title">Employee per Department</div>
-          <hr>
-
-          <div class="panel-body">
-            <div id="flot-pie" style="height: 250px"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div>      
   </div>
 <!-- ================= END: CONTENT ============================= -->
 @endsection()

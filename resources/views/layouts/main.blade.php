@@ -16,7 +16,7 @@
   <!-- Overlay for fixed sidebar -->
   <div class="overlay"></div>
 
-
+  @include('layouts.includes.apps')    
 
   @include('layouts.includes.rightbar')    
 

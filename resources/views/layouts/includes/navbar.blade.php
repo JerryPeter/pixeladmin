@@ -13,13 +13,23 @@
     <div class="collapse navbar-collapse" id="px-demo-navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="font-size-20">
-        <a href class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>Human Capital</b></a>
+        <a href class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-street-view"></i>&nbsp;
+          <b>Human Capital</b>
+        </a>
         </li>
         <!-- ======================= BEGIN: COMPANY NAVBAR ===================================== -->
         <li class="dropdown">
-          <a href class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i>PT. Kirana Sukses Mandiri</i></a>
-
-        </li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bookmark-o"></i>&nbsp;&nbsp;
+                <span class="hidden-md">PT. Kirana Sukses Mandiri</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="pages-profile-v2.html">PT. Ultima Address</a></li>
+                <li><a href="pages-account.html">PT. Ruangkecil Jaya Abadi</a></li>
+                <li><a href="pages-messages-list.html">PT. Business Intelligence Technologies</a></li>
+            </ul>
+        </li>          
         <!-- ======================= END: COMPANY NAVBAR ===================================== -->    
 
       </ul>

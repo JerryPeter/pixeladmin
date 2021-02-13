@@ -12,7 +12,7 @@
   <!-- DEMO ONLY: Load PixelAdmin core stylesheets -->
   <script>
     _pxDemo_loadStylesheet('assets/css/bootstrap.min.css', 'px-demo-stylesheet-bs');
-    _pxDemo_loadStylesheet('assets/css/pixeladmin.min.css', 'px-demo-stylesheet-core');
+    _pxDemo_loadStylesheet('assets/css/pixeladmin.css', 'px-demo-stylesheet-core');
     _pxDemo_loadStylesheet('assets/css/widgets.min.css', 'px-demo-stylesheet-widgets');
     _pxDemo_loadStylesheet("assets/css/kertaskerja.css", 'px-demo-stylesheet-widgets');
   </script>

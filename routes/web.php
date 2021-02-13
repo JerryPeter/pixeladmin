@@ -37,3 +37,4 @@ Route::get('department', [MasterController::class, 'department']);
 Route::get('department_add', [MasterController::class, 'department_add']);
 
 Route::get('divisi', [MasterController::class, 'divisi']);
+Route::get('jabatan', [MasterController::class, 'jabatan']);

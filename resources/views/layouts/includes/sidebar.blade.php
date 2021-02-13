@@ -50,7 +50,7 @@
       </li>
 
       <li class="px-nav-item bg-success text-white">
-        <a href="#"><i class="px-nav-icon fa fa-male"></i><span class="px-nav-label">Human Capital Apps</span></a>
+        <a href="#"><i class="px-nav-icon fa fa-male"></i><span class="px-nav-label">Human Capital</span></a>
       </li>      
 
       <li class="px-nav-item px-nav-dropdown">
@@ -59,7 +59,7 @@
         <ul class="px-nav-dropdown-menu">
           <li class="px-nav-item"><a href="department"><span class="px-nav-label">Master Department</span></a></li>
           <li class="px-nav-item"><a href="divisi"><span class="px-nav-label">Master Divisi</span></a></li>
-          <li class="px-nav-item"><a href="position"><span class="px-nav-label">Master Position</span></a></li>
+          <li class="px-nav-item"><a href="jabatan"><span class="px-nav-label">Master Jabatan</span></a></li>
           <li class="px-nav-item"><a href="golongan"><span class="px-nav-label">Master Golongan</span></a></li>
           <li class="px-nav-item"><a href="banding"><span class="px-nav-label">Master Banding</span></a></li>
           <li class="px-nav-item"><a href="business"><span class="px-nav-label">Master Business Unit</span></a></li>
@@ -109,8 +109,11 @@
       </li>
 
       <li class="px-nav-box b-t-1 p-a-2">
-        <a href="pages-invoice.html" class="btn btn-primary btn-block btn-outline">Create Invoice</a>
+        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal-base">
+        <i class="px-nav-icon fa fa-th-large"></i>Application
+        </button>     
       </li>
+
     </ul>
   </nav>
   <!-- ================= END: SIDEBAR ============================= -->

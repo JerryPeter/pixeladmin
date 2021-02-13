@@ -1,11 +1,13 @@
 $(document).ready(function() {
     var overlay = $('.overlay');
+    var btnAppsClose = $('#btnAppsClose');
     
     $('#right_sidebar').on('click', function() {
         if ($('.overlay').hasClass('active')) {
             $('.overlay').removeClass('active');
         } else {
             $('.overlay').addClass('active');
+            $('#px-nav-filter').pxNav('collapse');
         }
     });
 
@@ -20,6 +22,10 @@ $(document).ready(function() {
         $('#sidebar-right').removeClass('open');
         e.preventDefault();
     });        
+
+    btnAppsClose.on('click', function() {
+        $('#modal-base').modal('hide')
+    });    
 
     /*--- Kalau gag boleh ditutup dicomment saja --*/
     overlay.on('click', function() {
@@ -58,11 +64,11 @@ $(document).ready(function() {
     $('#btnFullscreenObj').on('click', function(e) {
         toggleWindowFullscreen("objFullscreen");
     });       
-         
-     
+             
 
-     document.addEventListener('dblclick', () => {
-        toggleFullscreen();
-     });
+    /*--- Kalau mau double click dimana saja untuk full screen -- */
+    // document.addEventListener('dblclick', () => {
+    //     toggleFullscreen();
+    // });
 
 });
