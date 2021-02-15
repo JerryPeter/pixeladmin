@@ -108,6 +108,39 @@
         </ul>
       </li>
 
+      <li class="px-nav-item bg-success text-white">
+        <a href="#"><i class="px-nav-icon fa fa-street-view"></i><span class="px-nav-label">User Management</span></a>
+      </li>      
+
+      <li class="px-nav-item px-nav-dropdown">
+        <a href="#"><i class="px-nav-icon ion-cube"></i><span class="px-nav-label">Application Control</span></a>
+
+        <ul class="px-nav-dropdown-menu">
+          <li class="px-nav-item"><a href="aplikasi"><span class="px-nav-label">Aplikasi</span></a></li>
+          <li class="px-nav-item"><a href="menu"><span class="px-nav-label">Menu</span></a></li>
+          <li class="px-nav-item"><a href="action"><span class="px-nav-label">Action</span></a></li>          
+          <li class="px-nav-item"><a href="usergroup"><span class="px-nav-label">User Group</span></a></li>        
+        </ul>
+      </li>
+
+      <li class="px-nav-item px-nav-dropdown">
+        <a href="#"><i class="px-nav-icon fa fa-television"></i><span class="px-nav-label">Access Control</span></a>
+
+        <ul class="px-nav-dropdown-menu">
+          <li class="px-nav-item"><a href="forms-layout.html"><span class="px-nav-label">Group Access</span></a></li>
+          <li class="px-nav-item"><a href="forms-layout.html"><span class="px-nav-label">User Access</span></a></li>                    
+        </ul>
+      </li>      
+
+      <li class="px-nav-item px-nav-dropdown">
+        <a href="#"><i class="px-nav-icon fa fa-users"></i><span class="px-nav-label">User Control</span></a>
+
+        <ul class="px-nav-dropdown-menu">
+          <li class="px-nav-item"><a href="forms-layout.html"><span class="px-nav-label">Users</span></a></li>
+          <li class="px-nav-item"><a href="forms-layout.html"><span class="px-nav-label">User Group</span></a></li>                    
+        </ul>
+      </li>       
+
       <li class="px-nav-box b-t-1 p-a-2">
         <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modal-base">
         <i class="px-nav-icon fa fa-th-large"></i>Application
