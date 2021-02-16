@@ -56,9 +56,4 @@
     });
   </script>
 
-  <!-- Google Maps -->
-  <!-- NOTE: When using Google Maps on your own site you MUST get your own API key:
-             https://developers.google.com/maps/documentation/javascript/get-api-key
-             After you got the key paste it in the URL below. -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHtdj4L66c05v1UZm-nte1FzUEAN6GKBI&callback=initMap&sensor=false" async defer></script>
   <!-- ================= END: FOOTER SCRIPT ============================= -->
