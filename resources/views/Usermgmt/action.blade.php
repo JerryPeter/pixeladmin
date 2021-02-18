@@ -26,7 +26,7 @@
             toolbar: '#tb',  
             pagination:true,   
             autoRowHeight:true,  
-            rownumbers:true,   
+            rownumbers:true,  
             columns:[[                
                 {field:'id',checkbox:true},
                 {field:'itemid',title:'Item ID',width:80,sortable:true},
