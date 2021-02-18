@@ -42,3 +42,7 @@ Route::get('jabatan', [MasterController::class, 'jabatan']);
 
 //-- USERMANAGEMENT ------------
 Route::get('aplikasi', [AplikasiController::class, 'index']);
+Route::get('aplikasi_detail', [AplikasiController::class, 'aplikasiDetail']);
+
+Route::get('menu', [AplikasiController::class, 'menu']);
+Route::get('action', [AplikasiController::class, 'action']);

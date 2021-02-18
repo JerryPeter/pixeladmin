@@ -14,6 +14,8 @@
 
     $(document).ready(function() {
 
+        
+
         $('#px-nav-filter').pxNav();
 
         $( "#btn_filter1" ).click(function() {
@@ -80,7 +82,7 @@
                 null,  // remaining width
                 null, // automatically calculates
                 null,  // remaining width                                
-                { "width": "100px" }                
+                { "width": "120px" }                
             ]            
       } );   
          
@@ -239,7 +241,7 @@
                             <span class="hidden-md">&nbsp;&nbsp;Aksi lain</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="pages-profile-v2.html"><span class="label label-warning pull-xs-right"><i class="fa fa-asterisk"></i></span>Profile</a></li>
+                            <li><a href="aplikasi_detail"><span class="label label-warning pull-xs-right"><i class="fa fa-asterisk"></i></span>Profile</a></li>
                             <li><a href="pages-account.html">Account</a></li>
                             <li><a href="pages-messages-list.html"><i class="dropdown-icon fa fa-envelope"></i>&nbsp;&nbsp;Messages</a></li>
                             <li class="divider"></li>
@@ -297,7 +299,7 @@
                     <!--------- ======================== BEGIN: CONTENT ==================================== -->
                         <div class="table-primary ">
                             <div class="table">    
-                                <table class="table table-hover table-striped table-bordered" id="tables">
+                                <table class="table table-hover table-striped table-bordered tree" id="tables">
                                     <thead>
                                     <tr>
                                         <th><input type="checkbox" name="select-checkbox"></th>
@@ -321,6 +323,7 @@
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
                                                     <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>                                                                                                                                              
                                                 </center>
                                             </td>
                                         </tr>
@@ -334,7 +337,8 @@
                                             <td>
                                             <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -348,7 +352,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -362,7 +367,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -376,7 +382,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -390,7 +397,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -404,7 +412,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -418,7 +427,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -432,7 +442,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -446,7 +457,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -460,7 +472,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -474,7 +487,8 @@
                                             <td class="center">
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -492,7 +506,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>
                                         </tr>
@@ -506,7 +521,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -520,7 +536,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -534,7 +551,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -548,7 +566,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -562,7 +581,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -576,7 +596,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -590,7 +611,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -604,7 +626,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -618,7 +641,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -632,7 +656,8 @@
                                             <td>
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
@@ -646,385 +671,14 @@
                                             <td class="center">
                                                 <center>
                                                     <button type="button" class="btn btn-xs btn-default fa fa-pencil-square-o font-size-14"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>      
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-trash-o font-size-14"></button>                                                
+                                                    <button type="button" class="btn btn-xs btn-default border-default fa fa-list-alt font-size-14"></button>      
                                                 </center>
                                             </td>                                
                                         </tr>
                                     </tbody>
                                 </table>
-                                
 
-<ul class="nav nav-tabs">
-  <li class="active">
-    <a href="#tabs-home" data-toggle="tab">
-      Menu
-    </a>
-  </li>
-  <li>
-    <a href="#tabs-profile" data-toggle="tab">
-      Group
-    </a>
-  </li>
-  <li>
-    <a href="#tabs-profile" data-toggle="tab">
-      Action
-    </a>
-  </li>
-</ul>
-
-<div class="tab-content tab-content-bordered">
-  <div class="tab-pane fade in active" id="tabs-home">
-    <table class="table table-striped table-bordered" id="datatables">
-        <thead>
-        <tr>
-            <th><input type="checkbox" name="select-checkbox"></th>
-            <th>Dept ID</th>
-            <th>Code</th>
-            <th>Nama Department</th>
-            <th>Keterangan</th>
-            <th>Status</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd gradeX">
-            <td><input type="checkbox" value="D000001"></td>
-            <td>D000001</td>
-            <td>MIS</td>
-            <td>Managment Information System</td>
-            <td class="center">Department MIS</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeC">
-            <td><input type="checkbox" value="D000002"></td>
-            <td>D000002</td>
-            <td>SALES</td>
-            <td>Sales</td>
-            <td class="center">Department Sales</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000003"></td>
-            <td>D000003</td>
-            <td>HCM</td>
-            <td>Human Capital Management</td>
-            <td class="center">Department Human Capital</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000004"></td>
-            <td>D000004</td>
-            <td>AUDIT</td>
-            <td>Internal Audit</td>
-            <td class="center">Department Internal Audit</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000005"></td>
-            <td>D000005</td>
-            <td>FIN</td>
-            <td>Finance</td>
-            <td class="center">Department Finance</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000006"></td>
-            <td>D000006</td>
-            <td>MKT</td>
-            <td>Marketing & Pemasaran</td>
-            <td class="center">Department Marketing & Pemasaran</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeX">
-            <td><input type="checkbox" value="D000007"></td>
-            <td>D000007</td>
-            <td>MIS</td>
-            <td>Managment Information System</td>
-            <td class="center">Department MIS</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeC">
-            <td><input type="checkbox" value="D000008"></td>
-            <td>D000008</td>
-            <td>SALES</td>
-            <td>Sales</td>
-            <td class="center">Department Sales</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000009"></td>
-            <td>D000009</td>
-            <td>HCM</td>
-            <td>Human Capital Management</td>
-            <td class="center">Department Human Capital</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000010"></td>
-            <td>D000010</td>
-            <td>AUDIT</td>
-            <td>Internal Audit</td>
-            <td class="center">Department Internal Audit</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000011"></td>
-            <td>D000011</td>
-            <td>FIN</td>
-            <td>Finance</td>
-            <td class="center">Department Finance</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000012"></td>
-            <td>D000012</td>
-            <td>MKT</td>
-            <td>Marketing & Pemasaran</td>
-            <td class="center">Department Marketing & Pemasaran</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-
-        </tbody>
-    </table>
-  </div>
-  <div class="tab-pane fade" id="tabs-profile">
-  <table class="table table-striped table-bordered" id="datatables">
-        <thead>
-        <tr>
-            <th><input type="checkbox" name="select-checkbox"></th>
-            <th>Dept ID</th>
-            <th>Code</th>
-            <th>Nama Department</th>
-            <th>Keterangan</th>
-            <th>Status</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd gradeX">
-            <td><input type="checkbox" value="D000001"></td>
-            <td>D000001</td>
-            <td>MIS</td>
-            <td>Managment Information System</td>
-            <td class="center">Department MIS</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeC">
-            <td><input type="checkbox" value="D000002"></td>
-            <td>D000002</td>
-            <td>SALES</td>
-            <td>Sales</td>
-            <td class="center">Department Sales</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000003"></td>
-            <td>D000003</td>
-            <td>HCM</td>
-            <td>Human Capital Management</td>
-            <td class="center">Department Human Capital</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000004"></td>
-            <td>D000004</td>
-            <td>AUDIT</td>
-            <td>Internal Audit</td>
-            <td class="center">Department Internal Audit</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000005"></td>
-            <td>D000005</td>
-            <td>FIN</td>
-            <td>Finance</td>
-            <td class="center">Department Finance</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000006"></td>
-            <td>D000006</td>
-            <td>MKT</td>
-            <td>Marketing & Pemasaran</td>
-            <td class="center">Department Marketing & Pemasaran</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeX">
-            <td><input type="checkbox" value="D000007"></td>
-            <td>D000007</td>
-            <td>MIS</td>
-            <td>Managment Information System</td>
-            <td class="center">Department MIS</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeC">
-            <td><input type="checkbox" value="D000008"></td>
-            <td>D000008</td>
-            <td>SALES</td>
-            <td>Sales</td>
-            <td class="center">Department Sales</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000009"></td>
-            <td>D000009</td>
-            <td>HCM</td>
-            <td>Human Capital Management</td>
-            <td class="center">Department Human Capital</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000010"></td>
-            <td>D000010</td>
-            <td>AUDIT</td>
-            <td>Internal Audit</td>
-            <td class="center">Department Internal Audit</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000011"></td>
-            <td>D000011</td>
-            <td>FIN</td>
-            <td>Finance</td>
-            <td class="center">Department Finance</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000012"></td>
-            <td>D000012</td>
-            <td>MKT</td>
-            <td>Marketing & Pemasaran</td>
-            <td class="center">Department Marketing & Pemasaran</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-
-        </tbody>
-    </table>
-  </div>
-  <div class="tab-pane fade" id="tabs-dropdown1">
-  <table class="table table-striped table-bordered" id="datatables">
-        <thead>
-        <tr>
-            <th><input type="checkbox" name="select-checkbox"></th>
-            <th>Dept ID</th>
-            <th>Code</th>
-            <th>Nama Department</th>
-            <th>Keterangan</th>
-            <th>Status</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd gradeX">
-            <td><input type="checkbox" value="D000001"></td>
-            <td>D000001</td>
-            <td>MIS</td>
-            <td>Managment Information System</td>
-            <td class="center">Department MIS</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeC">
-            <td><input type="checkbox" value="D000002"></td>
-            <td>D000002</td>
-            <td>SALES</td>
-            <td>Sales</td>
-            <td class="center">Department Sales</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000003"></td>
-            <td>D000003</td>
-            <td>HCM</td>
-            <td>Human Capital Management</td>
-            <td class="center">Department Human Capital</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000004"></td>
-            <td>D000004</td>
-            <td>AUDIT</td>
-            <td>Internal Audit</td>
-            <td class="center">Department Internal Audit</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000005"></td>
-            <td>D000005</td>
-            <td>FIN</td>
-            <td>Finance</td>
-            <td class="center">Department Finance</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000006"></td>
-            <td>D000006</td>
-            <td>MKT</td>
-            <td>Marketing & Pemasaran</td>
-            <td class="center">Department Marketing & Pemasaran</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeX">
-            <td><input type="checkbox" value="D000007"></td>
-            <td>D000007</td>
-            <td>MIS</td>
-            <td>Managment Information System</td>
-            <td class="center">Department MIS</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeC">
-            <td><input type="checkbox" value="D000008"></td>
-            <td>D000008</td>
-            <td>SALES</td>
-            <td>Sales</td>
-            <td class="center">Department Sales</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000009"></td>
-            <td>D000009</td>
-            <td>HCM</td>
-            <td>Human Capital Management</td>
-            <td class="center">Department Human Capital</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000010"></td>
-            <td>D000010</td>
-            <td>AUDIT</td>
-            <td>Internal Audit</td>
-            <td class="center">Department Internal Audit</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="odd gradeA">
-            <td><input type="checkbox" value="D000011"></td>
-            <td>D000011</td>
-            <td>FIN</td>
-            <td>Finance</td>
-            <td class="center">Department Finance</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-        <tr class="even gradeA">
-            <td><input type="checkbox" value="D000012"></td>
-            <td>D000012</td>
-            <td>MKT</td>
-            <td>Marketing & Pemasaran</td>
-            <td class="center">Department Marketing & Pemasaran</td>
-            <td class="center"><a href="#" class="label label-success">Active</a></td>
-        </tr>
-
-        </tbody>
-    </table>
-  </div>
-  <div class="tab-pane fade" id="tabs-dropdown2">
-    <p>
-      Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party
-      before they sold out master cleanse gluten-free squid scenester freegan
-      cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf
-      cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR,
-      banh mi before they sold out farm-to-table VHS viral locavore cosby
-      sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft
-      beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park
-      vegan.
-    </p>
-  </div>
-</div>
 
                             </div>
                         </div>     

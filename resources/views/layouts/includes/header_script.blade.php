@@ -1,4 +1,7 @@
   <!-- ========================== BEGIN: HEADER SCRIPT ============================ -->
+
+
+
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin" rel="stylesheet" type="text/css">
   <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -17,7 +20,12 @@
     _pxDemo_loadStylesheet("assets/css/kertaskerja.css", 'px-demo-stylesheet-widgets');
   </script>
 
+   <!-- EASY UI --------------->
+   <link rel="stylesheet" type="text/css" href="assets/easyui/themes/material/easyui.css">
+   <link rel="stylesheet" type="text/css" href="assets/easyui/themes/icon.css">
+   
   <link href="assets/css/themes.css" rel="stylesheet" type="text/css">
+
 
 
   <!-- Demo assets -->
@@ -32,8 +40,28 @@
 
   <!-- <script src="assets/demo/demo.js"></script> -->
 
+  <!-- ANIMATED POPUP MODAL -->
+  <link rel="stylesheet" href="assets/css/normalize.min.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+
+  <!-- POPUP JQUERY CONFIRM -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>  
+
+
+
+
   <!-- Custom styling -->
   <style>
+    /*-- BEGIN: ANIMATED POPUP MODAL --*/
+    #btn-close-modal {
+        width:100%;
+        text-align: center;
+        cursor:pointer;
+        color:#fff;
+    }
+    /*-- END: ANIMATED POPUP MODAL --*/
+
     .page-about-us-header.page-header {
       padding-top: 90px;
       padding-bottom: 90px;

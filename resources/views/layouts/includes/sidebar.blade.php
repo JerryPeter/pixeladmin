@@ -146,7 +146,15 @@
         <i class="px-nav-icon fa fa-th-large"></i>Application
         </button>     
       </li>
+<!--       
+      <li class="px-nav-box b-t-1 p-a-2">
+        <a class="btn btn-primary btn-block" id="demo01" href="#popup-modal1"><i class="px-nav-icon fa fa-th-large"></i>DEMO01</a>
+      </li>
 
+      <li class="px-nav-box b-t-1 p-a-2">
+        <a class="btn btn-primary btn-block" id="demo02" href="#popup-modal2"><i class="px-nav-icon fa fa-th-large"></i>DEMO02</a>
+      </li>      
+ -->
     </ul>
   </nav>
   <!-- ================= END: SIDEBAR ============================= -->

@@ -11,4 +11,19 @@ class AplikasiController extends Controller
     {
         return view('usermgmt.aplikasi');
     }  
+
+    public function aplikasiDetail()
+    {
+        return view('usermgmt.aplikasi_detail');
+    }    
+    
+    public function menu()
+    {
+        return view('usermgmt.menu');
+    }  
+    
+    public function action()
+    {
+        return view('usermgmt.action');
+    }     
 }
