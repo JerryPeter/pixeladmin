@@ -16,10 +16,6 @@
   <!-- POPUP ANIMATED -->
   <script src="assets/js/animatedModal.js"></script>
 
-  <!-- EASY UI -->
-  <!-- <script type="text/javascript" src="assets/easyui/js/jquery.min.js"></script> -->
-  <script type="text/javascript" src="assets/easyui/js/jquery.easyui.min.js"></script>
-
   <script type="text/javascript">
     // -------------------------------------------------------------------------
     // Initialize DEMO
