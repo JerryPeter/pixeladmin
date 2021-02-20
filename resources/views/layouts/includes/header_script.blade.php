@@ -20,9 +20,6 @@
     _pxDemo_loadStylesheet("assets/css/kertaskerja.css", 'px-demo-stylesheet-widgets');
   </script>
 
-   <!-- EASY UI --------------->
-   <link rel="stylesheet" type="text/css" href="assets/easyui/themes/material/easyui.css">
-   <link rel="stylesheet" type="text/css" href="assets/easyui/themes/icon.css">
    
   <link href="assets/css/themes.css" rel="stylesheet" type="text/css">
 
