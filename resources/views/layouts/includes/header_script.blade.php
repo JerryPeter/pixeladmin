@@ -26,8 +26,6 @@
    
   <link href="assets/css/themes.css" rel="stylesheet" type="text/css">
 
-
-
   <!-- Demo assets -->
   <script>_pxDemo_loadStylesheet('assets/demo/demo.css');</script>
   
