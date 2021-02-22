@@ -25,7 +25,9 @@
    <link rel="stylesheet" type="text/css" href="assets/easyui/themes/icon.css">
    
   <link href="assets/css/themes.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="assets/css/jeasyui.css">  
 
+  
   <!-- Demo assets -->
   <script>_pxDemo_loadStylesheet('assets/demo/demo.css');</script>
   
