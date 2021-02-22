@@ -13,36 +13,37 @@
     // Initialize DataTables
 
     $(document).ready(function() {
-        function formatDetail(value,row){
-                var href = 'innerlist.php?list='+row.id;
-                var dhref = 'dellist.php?list='+row.id;
-                return '<center><a target="_blank" href="' + href + '"><span class="btn btn-primary btn-xs"><i class="fa fa-search"></i> Preview</span></a><a href="' + dhref + '" class="easyui-linkbutton" iconCls="icon-remove" plain="true" >Remove Entry</a></center>';
-            }
+
+        $('#filterForm').accordion({
+            animate:true,
+            selected:false
+        });        
 
         $('#dg').datagrid({
             url:'datagrid_data1.json',
             striped:true,
-            title:"Action list",
+            title:"Action Data List",
             toolbar: '#tb',  
             pagination:true,   
             autoRowHeight:true,  
             rownumbers:true,  
+            fit:true,
             columns:[[                
                 {field:'id',checkbox:true},
+                {field:'action',title:'Action',width:80,align:'center',
+                    formatter:function(value,row,index){
+                            var e = '<a href="javascript:void(0)" onclick="editrow(this)"><i class="fa fa-edit m-r-1"></i></a> ';
+                            var d = '<a href="javascript:void(0)" onclick="deleterow(this)"><i class="fa fa-trash-o"></i></a>';
+                            return e+d;
+                    }
+                },                    
                 {field:'itemid',title:'Item ID',width:80,sortable:true},
                 {field:'productid',title:'Product ID',width:100,sortable:true},
                 {field:'productname',title:'Name',width:100,sortable:true},
                 {field:'unitcost',title:'Cost',width:100,align:'right'},
                 {field:'status',title:'Product ID',width:100},
                 {field:'listprice',title:'List Price',width:100},
-                {field:'attr1',title:'Attribute',width:'50%'},
-                {field:'action',title:'Action',width:100,align:'center',
-                formatter:function(value,row,index){
-                        var e = '<a href="javascript:void(0)" onclick="editrow(this)">Edit</a> ';
-                        var d = '<a href="javascript:void(0)" onclick="deleterow(this)">Delete</a>';
-                        return e+d;
-                }
-            }              
+                {field:'attr1',title:'Attribute',width:'40%'}          
             ]],
             rowStyler: function(index,row){
                 if (row.listprice<30){
@@ -58,6 +59,8 @@
                 //...
             }            
         });
+
+        $('.datagrid-body').perfectScrollbar();     
     });        
 
 
@@ -157,34 +160,24 @@
         <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-android-folder"></i>Master Data / </span>Jabatan</h1>
         </div>
 
-        <div class="panel panel-body-colorful scroll" id="objFullscreen">
-            <div class="collapse navbar-collapse " id="px-demo-navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" role="button" aria-haspopup="true" aria-expanded="false" id="toggle">
-                            <i class="fa ion-android-search m-r-1"></i>Filter
-                        </a>
-                    </li>                 
-                    <!-- ===================== BEGIN: FULLSCREEN  ====================================-->
-                    <li class="dropdown">           
-                        <a href="#" id="btnFullscreenObj">
-                            <i class="px-navbar-icon ion-qr-scanner font-size-14"></i>
-                            <span class="px-navbar-icon-label">Fullscreen</span>
-                        </a>	                                      
-                    </li>
-                    <!-- ===================== END: FULLSCREEN ====================================-->                 
-                </ul>
-            </div>       
-            <div class="p-a-3">
-                <div style="position: relative; min-height: 250px; overflow: hidden;" class="clearfix">
-                    <!--------- ======================== BEGIN: CONTENT ==================================== -->
-                    <table id="dg"></table>
-                    <div id="tb">
-                        <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="javascript:alert('Add')">Add</a>
-                        <a href="#" class="easyui-linkbutton" iconCls="icon-cut" plain="true" onclick="javascript:alert('Cut')">Cut</a>
-                        <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="javascript:alert('Save')">Save</a>
-                    </div>                    
-                    <!--------- ======================== END: CONTENT ====================================== -->
+        <div class="panel panel-body-colorful scroll" id="objFullscreen">             
+            <div class="p-a-3">    
+                <div class="easyui-layout" style="width:100%;height:500px;">
+                    <div data-options="region:'north'" style="height:50px"></div>
+                    <div data-options="region:'south',split:true" style="height:50px;"></div>
+                    <div data-options="region:'west',split:true" title="West" style="width:300px;"></div>
+                    <div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
+                                <!--------- ======================== BEGIN: CONTENT ==================================== -->
+                                <table id="dg"></table>
+                                <div id="tb">
+                                    <a href="#" class="easyui-linkbutton" plain="true" onclick="javascript:alert('Add')"><i class="fa fa-plus m-r-1"></i>Tambah</a>
+                                    <a href="#" class="easyui-linkbutton" plain="true" onclick="javascript:alert('Cut')"><i class="fa fa-edit m-r-1"></i>Ubah
+                                    <a href="#" class="easyui-linkbutton" plain="true" onclick="javascript:alert('Save')"><i class="fa fa-remove m-r-1"></i>Hapus</a>
+                                    <a href="#" class="easyui-linkbutton" plain="true"><i class="fa ion-android-search m-r-1"></i>Filter</a>                        
+                                    <a href="#" class="easyui-linkbutton" plain="true" id="btnFullscreenObj"><i class="ion-qr-scanner"></i>&nbsp;&nbsp;Fullscreen</a>	                        
+                                </div>                    
+                                <!--------- ======================== END: CONTENT ====================================== -->    
+                    </div>
                 </div>
             </div>
         </div>
