@@ -10,19 +10,31 @@
 @section('footer_additional')
 <script>    
     // -------------------------------------------------------------------------
-    // Initialize DataTables
+    function editrow() {
+            alert ("Edit Row");
+    }
+
+    function tambahData() {
+        $('#win').window({
+            title:"Tambah Data Baru",
+            width:600,
+            height:400,
+            minimizable:false,
+            collapsible:false,
+            resizable:false,
+            shadow:false,
+            border:"thick",
+            modal:true
+        });
+    }    
 
     $(document).ready(function() {
 
-        $('#filterForm').accordion({
-            animate:true,
-            selected:false
-        });        
 
         $('#dg').datagrid({
             url:'datagrid_data1.json',
             striped:true,
-            title:"Action Data List",
+            // title:"Action Data List",
             toolbar: '#tb',  
             pagination:true,   
             autoRowHeight:true,  
@@ -32,8 +44,8 @@
                 {field:'id',checkbox:true},
                 {field:'action',title:'Action',width:80,align:'center',
                     formatter:function(value,row,index){
-                            var e = '<a href="javascript:void(0)" onclick="editrow(this)"><i class="fa fa-edit m-r-1"></i></a> ';
-                            var d = '<a href="javascript:void(0)" onclick="deleterow(this)"><i class="fa fa-trash-o"></i></a>';
+                            var e = '<a href="javascript:editrow()"><i class="fa fa-edit m-r-1"></i></a> ';
+                            var d = '<a href="javascript:alert(\'Delete\')"><i class="fa fa-trash-o"></i></a>';
                             return e+d;
                     }
                 },                    
@@ -60,6 +72,7 @@
             }            
         });
 
+
         $('.datagrid-body').perfectScrollbar();     
     });        
 
@@ -70,6 +83,7 @@
 
 @section('content')
 <!-- ================= BEGIN: CONTENT ============================= -->
+<div id="win"></div>
 
 <div class="px-content">
     <div>
@@ -155,22 +169,34 @@
         </div>
     </div>       
      
-    <div class="m-t-0 m-l-2 m-r-2 m-b-2">
-        <div class="page-header">
-        <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-android-folder"></i>Master Data / </span>Jabatan</h1>
-        </div>
+    <div class="m-a-3">
 
         <div class="panel panel-body-colorful scroll" id="objFullscreen">             
             <div class="p-a-3">    
-                <div class="easyui-layout" style="width:100%;height:500px;">
-                    <div data-options="region:'north'" style="height:50px"></div>
-                    <div data-options="region:'south',split:true" style="height:50px;"></div>
-                    <div data-options="region:'west',split:true" title="West" style="width:300px;"></div>
-                    <div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
+                <div class="page-header">
+                    <h1><span class="text-muted font-weight-light"><i class="page-header-icon ion-android-folder"></i>Master Data / </span>Jabatan</h1>
+                </div>
+
+                <div class="easyui-layout" style="width:100%;height:600px;">
+                    <div data-options="region:'west',split:true,hideCollapsedContent:false,collapsed:true" title="Filter" style="width:300px;">
+                        <div class="p-a-2">
+                            <div class="form-group">
+                                <label class="control-label required" for="required-input">Code</label>
+                                <input type="text" class="form-control" id="required-input">
+                            </div>        
+                            <div class="form-group">
+                                <label class="control-label required" for="required-input">Nama</label>
+                                <input type="text" class="form-control" id="required-input">
+                            </div>                             
+                            <button type="button" class="btn btn-primary">Submit</button>                                                                       
+                            <button type="button" class="btn">Reset</button>                            
+                        </div>
+                    </div>
+                    <div data-options="region:'center',title:'Main Title',iconCls:'icon-table'">
                                 <!--------- ======================== BEGIN: CONTENT ==================================== -->
                                 <table id="dg"></table>
                                 <div id="tb">
-                                    <a href="#" class="easyui-linkbutton" plain="true" onclick="javascript:alert('Add')"><i class="fa fa-plus m-r-1"></i>Tambah</a>
+                                    <a href="#" class="easyui-linkbutton" plain="true" onclick="javascript:tambahData()"><i class="fa fa-plus m-r-1"></i>Tambah</a>
                                     <a href="#" class="easyui-linkbutton" plain="true" onclick="javascript:alert('Cut')"><i class="fa fa-edit m-r-1"></i>Ubah
                                     <a href="#" class="easyui-linkbutton" plain="true" onclick="javascript:alert('Save')"><i class="fa fa-remove m-r-1"></i>Hapus</a>
                                     <a href="#" class="easyui-linkbutton" plain="true"><i class="fa ion-android-search m-r-1"></i>Filter</a>                        
