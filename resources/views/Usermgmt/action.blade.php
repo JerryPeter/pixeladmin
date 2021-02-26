@@ -16,15 +16,20 @@
 
     function tambahData() {
         $('#win').window({
-            title:"Tambah Data Baru",
+            //title:"Tambah Data Baru",
             width:600,
-            height:400,
+            height:800,
             minimizable:false,
             collapsible:false,
             resizable:false,
+            closable:false,
+            minimizable:false,   
+            maximizable:false,       
             shadow:false,
-            border:"thick",
-            modal:true
+            border:false,
+            inline:true,
+            modal:true,
+            draggable:false
         });
     }    
 
