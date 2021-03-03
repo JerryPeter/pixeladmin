@@ -22,7 +22,7 @@
             minimizable:false,
             collapsible:false,
             resizable:false,
-            closable:false,
+            closable:true,
             minimizable:false,   
             maximizable:false,       
             shadow:false,
